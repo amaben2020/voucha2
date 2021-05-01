@@ -41,7 +41,7 @@ import SignInDonorVendor from "./UI/SignInDonorVendor";
 import DonorSignin from "./UI/DonorSignin";
 import VendorSignin from "./UI/VendorSignin";
 import { useAuth0 } from "@auth0/auth0-react";
-import PrivateRoute from "./UI/PrivateRoute";
+
 // function App({ setCurrentUser, currentUser }) {
 function App() {
 	const [selectedIndex, setSelectedIndex] = useState(0);

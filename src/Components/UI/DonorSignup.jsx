@@ -1,16 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
+
 import DonorSignupForm from "../UI/DonorSignupForm";
 import mobileBackground from "../../assets/mobileBackground.jpg";
-import { Link, withRouter, Route, Redirect } from "react-router-dom";
+
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { useAuth0 } from "@auth0/auth0-react";
+
 import hand from "../../assets/hands.png";
 import "./App.module.css";
-import DonorDashboard from "./DonorDashboard";
 
 const useStyles = makeStyles((theme) => ({
 	learnButton: {
@@ -84,7 +83,6 @@ function DonorSignUp({ props }) {
 	const classes = useStyles();
 	const theme = useTheme();
 	const matchesXS = useMediaQuery(theme.breakpoints.down("xs"));
-	const { isAuthenticated } = useAuth0();
 
 	return (
 		<Grid

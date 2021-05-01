@@ -149,7 +149,6 @@ export default function HowItWorks2(props) {
 															onClick={() => props.setValue(6)}
 															variant="contained"
 															color="secondary"
-															component={Link}
 															style={{
 																backgroundColor: "blue",
 																borderRadius: "3em",
@@ -259,6 +258,7 @@ export default function HowItWorks2(props) {
 							}}
 						>
 							<img
+								alt="how it works 3"
 								src={Howitworksp3}
 								style={{
 									height: matchesXS

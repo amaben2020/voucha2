@@ -147,7 +147,6 @@ export default function HowItWorks3(props) {
 															onClick={() => props.setValue(6)}
 															variant="contained"
 															color="secondary"
-															component={Link}
 															style={{ backgroundColor: "blue" }}
 														>
 															SIGN UP

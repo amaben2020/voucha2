@@ -57,7 +57,6 @@ export default function HowItWorks1(props) {
 	const matchesMD = useMediaQuery(theme.breakpoints.down("md"));
 	const matchesXS = useMediaQuery(theme.breakpoints.down("xs"));
 	const matchesSM = useMediaQuery(theme.breakpoints.down("sm"));
-	const matchesLG = useMediaQuery(theme.breakpoints.down("lg"));
 
 	return (
 		<Grid
@@ -95,7 +94,10 @@ export default function HowItWorks1(props) {
 							marginTop: "2em",
 						}}
 					>
-						&#x1F3E0; HOME
+						<span role="img" aria-labelledby="house">
+							{" "}
+							&#x1F3E0; HOME{" "}
+						</span>
 					</Button>{" "}
 				</Hidden>
 				<Grid item style={{ marginLeft: matchesXS ? "1.8em" : "3em" }}>

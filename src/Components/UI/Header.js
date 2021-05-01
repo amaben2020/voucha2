@@ -19,9 +19,6 @@ import ListItemText from "@material-ui/core/ListItemText";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import { Grid, Typography } from "@material-ui/core";
 import { useAuth0 } from "@auth0/auth0-react";
-import JSONpretty from "react-json-pretty";
-import StarIcon from "@material-ui/icons/Star";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
 
 //This is the elevation scroll function
 function ElevationScroll(props) {
@@ -434,7 +431,7 @@ function Header(props) {
 												marginTop: "5px",
 											}}
 											src={user.picture}
-											alt="image per"
+											alt="imageReaderper"
 										/>
 										<Typography
 											style={{

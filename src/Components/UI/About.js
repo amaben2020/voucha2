@@ -135,7 +135,6 @@ export default function About(props) {
 												fill={theme.palette.common.orange}
 											/>
 										}
-										aria-controls="panel1a-content"
 										id="panel1a-header"
 									>
 										<Typography className={classes.heading}>

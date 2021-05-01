@@ -194,7 +194,7 @@ const LandingPage = (props) => {
 		setExpanded(isExpanded ? panel : false);
 	};
 
-	const { loginWithRedirect, isAuthenticated } = useAuth0();
+	const { isAuthenticated } = useAuth0();
 
 	if (isAuthenticated) {
 		props.history.push("/donordashboard");
@@ -330,7 +330,6 @@ const LandingPage = (props) => {
 												/>
 											}
 											aria-controls="panel1a-content"
-											id="panel1a-header"
 										>
 											<Typography className={classes.heading}>
 												Overview

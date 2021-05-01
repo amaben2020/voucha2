@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import FormikControl from "./FormikControl";
 import { Form, Formik } from "formik";
 import { Button } from "@material-ui/core";
@@ -16,9 +16,8 @@ function DonorSigninForm({ props, setName, history }) {
 		name: "",
 		email: "",
 	};
-	const [username, setUsername] = useState(initialState);
 
-	const { loginWithRedirect, isAuthenticated } = useAuth0();
+	const { loginWithRedirect } = useAuth0();
 
 	const handleChangePassword = (e) => {
 		const password = e.target.value;
@@ -72,8 +71,6 @@ function DonorSigninForm({ props, setName, history }) {
 								label="Email"
 								name="email"
 								value={email}
-								// onChange={handleChange}
-								name="email"
 								style={{
 									marginLeft: matchesXS ? "0.2em" : "0.7em",
 									width: matchesXS ? "20em" : "25em",
