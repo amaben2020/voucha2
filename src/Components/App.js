@@ -12,6 +12,9 @@ import HowItWorks from "./UI/HowItWorks";
 import VendorSignUp from "../Components/UI/VendorSignUp";
 import FAQ from "../Components/UI/FAQ";
 import HowItWorks1 from "../Components/UI/HowItWorks1";
+import GenerateVoucher from "../Components/UI/GenerateVoucher";
+import GenerateVouchers from "../Components/UI/GenerateVouchers";
+import GenerateVouchers2 from "../Components/UI/GenerateVouchers2";
 import HowItWorks2 from "../Components/UI/HowItWorks2";
 import HowItWorks5 from "../Components/UI/HowItWorks5";
 import HowItWorks4 from "./UI/HowItWorks4";
@@ -165,7 +168,7 @@ function App() {
 							/>
 						)}
 					/> */}
-					{/* <Route
+					<Route
 						exact
 						path="/generatevoucher"
 						render={(props) => (
@@ -175,7 +178,7 @@ function App() {
 								setSelectedIndex={setSelectedIndex}
 							/>
 						)}
-					/> */}
+					/>
 					{/* <Route
 						exact
 						path="/vendorwallet"
@@ -187,7 +190,7 @@ function App() {
 							/>
 						)}
 					/> */}
-					{/* <Route
+					<Route
 						exact
 						path="/generatevouchers"
 						render={(props) => (
@@ -197,8 +200,8 @@ function App() {
 								setSelectedIndex={setSelectedIndex}
 							/>
 						)}
-					/>{" "} */}
-					{/* <Route
+					/>{" "}
+					<Route
 						exact
 						path="/generatevouchers2"
 						render={(props) => (
@@ -208,7 +211,7 @@ function App() {
 								setSelectedIndex={setSelectedIndex}
 							/>
 						)}
-					/> */}
+					/>
 					{/* <Route
 						exact
 						path="/distributevouchers"

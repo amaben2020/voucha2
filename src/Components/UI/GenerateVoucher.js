@@ -17,8 +17,8 @@ const useStyles = makeStyles((theme) => ({
 		backgroundPosition: "center",
 		backgroundSize: "cover",
 		backgroundRepeat: "no-repeat",
-		height: "60em",
-		paddingBottom: "10em",
+		height: "50em",
+		paddingBottom: "5em",
 		[theme.breakpoints.down("xs")]: {
 			backgroundImage: `url(${mobileBackground})`,
 			height: "100em",
@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
 		width: 205,
 		backgroundColor: "#6ACBE1",
 		fontSize: "1rem",
-		marginRight: "5em",
+		marginRight: "1em",
 		"&:hover": {
 			backgroundColor: "#fff",
 		},
@@ -119,8 +119,9 @@ export default function DonorDashboard(props) {
 						: matchesSM
 						? "2em"
 						: matchesMD
-						? "5em"
+						? "1em"
 						: "5em",
+					marginLeft: "-2em",
 				}}
 				justify="center"
 				alignItems="center"
@@ -201,7 +202,7 @@ export default function DonorDashboard(props) {
 				PaperProps={{
 					style: {
 						background: "grey",
-						minWidth: "45em",
+						width: "25em",
 						paddingTop: matchesXS ? "1em" : "5em",
 						paddingBottom: matchesXS ? "1em" : "5em",
 						paddingLeft: matchesXS
@@ -209,15 +210,15 @@ export default function DonorDashboard(props) {
 							: matchesSM
 							? "5em"
 							: matchesMD
-							? "10em"
-							: "20em",
+							? "3em"
+							: "0em",
 						paddingRight: matchesXS
 							? 0
 							: matchesSM
 							? "5em"
 							: matchesMD
 							? "10em"
-							: "20em",
+							: "0em",
 					},
 				}}
 			>
@@ -235,7 +236,7 @@ export default function DonorDashboard(props) {
 									style={{
 										borderRadius: "2em",
 										minHeight: "25em",
-										minWidth: "20em",
+										width: "5em",
 										marginLeft: "1em",
 										bottom: 0,
 										backgroundColor: "white-smoke",
@@ -275,8 +276,8 @@ export default function DonorDashboard(props) {
 								<Card
 									style={{
 										borderRadius: "1.5em",
-										maxHeight: "10em",
-										maxWidth: "17em",
+										maxHeight: "5em",
+										width: "3em",
 										marginLeft: "1em",
 										bottom: 0,
 										backgroundColor: "white",
@@ -292,7 +293,7 @@ export default function DonorDashboard(props) {
 											>
 												Vouchers generated
 											</Typography>
-											<Grid style={{ marginRight: "8em", padding: "0.5em" }}>
+											<Grid style={{ marginRight: "0.3em", padding: "0.5em" }}>
 												<img
 													src={upload}
 													style={{ maxHeight: 30, maxHeight: 30 }}
@@ -305,9 +306,9 @@ export default function DonorDashboard(props) {
 									style={{
 										borderRadius: "1.5em",
 										maxHeight: "10em",
-										minWidth: "12.5em",
-										marginTop: "2em",
-										marginLeft: "1em",
+										width: "5em",
+										marginTop: "1em",
+										marginLeft: "0.3em",
 										bottom: 0,
 										backgroundColor: "white",
 										width: "100%",
@@ -387,7 +388,7 @@ export default function DonorDashboard(props) {
 					container
 					style={{
 						marginTop: matchesXS ? "0.1em" : matchesMD ? "-1.8em" : "2em",
-						marginLeft: matchesXS ? "-1.5em" : undefined,
+						marginLeft: matchesXS ? "-1.5em" : "-3em",
 					}}
 					alignItems={"center"}
 				>
@@ -395,19 +396,19 @@ export default function DonorDashboard(props) {
 						<Grid item container>
 							<Card
 								style={{
-									minWidth: matchesXS
+									width: matchesXS
 										? "10em"
 										: matchesSM
-										? "20em"
+										? "10em"
 										: matchesMD
-										? "35em"
-										: "42em",
+										? "10em"
+										: "38.3em",
 									minHeight: matchesSM ? "17em" : matchesMD ? "18em" : "35em",
 									borderRadius: "3em",
 									marginLeft: matchesSM
 										? "3.8em"
 										: matchesMD
-										? "12em"
+										? "-6em"
 										: undefined,
 								}}
 							>
@@ -415,7 +416,7 @@ export default function DonorDashboard(props) {
 									<Grid
 										align="center"
 										style={{
-											padding: "1em",
+											padding: "0.2em",
 											marginTop: matchesXS
 												? "2em"
 												: matchesSM
@@ -430,7 +431,7 @@ export default function DonorDashboard(props) {
 											style={{
 												color: "#3E3B6B",
 												fontWeight: "6rem",
-												fontSize: "2.2rem",
+												fontSize: "1.8rem",
 											}}
 										>
 											0000
@@ -439,7 +440,7 @@ export default function DonorDashboard(props) {
 											style={{
 												color: "#3E3B6B",
 												fontWeight: "6rem",
-												fontSize: "1.6rem",
+												fontSize: "1rem",
 												lineHeight: 0.9,
 											}}
 										>
@@ -471,7 +472,7 @@ export default function DonorDashboard(props) {
 												: matchesMD
 												? "5em"
 												: "10em",
-											padding: "1em",
+											padding: "0.4em",
 											marginLeft: matchesXS ? "4em" : undefined,
 										}}
 									>
@@ -479,7 +480,7 @@ export default function DonorDashboard(props) {
 											style={{
 												color: "#3E3B6B",
 												fontWeight: "6rem",
-												fontSize: "2.2rem",
+												fontSize: "1.8rem",
 											}}
 										>
 											0000
@@ -488,7 +489,7 @@ export default function DonorDashboard(props) {
 											style={{
 												color: "#3E3B6B",
 												fontWeight: "6rem",
-												fontSize: "1.6rem",
+												fontSize: "1rem",
 												lineHeight: 0.9,
 											}}
 										>
@@ -523,13 +524,14 @@ export default function DonorDashboard(props) {
 												: matchesMD
 												? "5em"
 												: "10em",
+											padding: "-0.5em",
 										}}
 									>
 										<Typography
 											style={{
 												color: "#3E3B6B",
 												fontWeight: "6rem",
-												fontSize: "2.2rem",
+												fontSize: "1.8rem",
 											}}
 										>
 											0000
@@ -538,7 +540,7 @@ export default function DonorDashboard(props) {
 											style={{
 												color: "#3E3B6B",
 												fontWeight: "6rem",
-												fontSize: "1.6rem",
+												fontSize: "1rem",
 												lineHeight: 0.9,
 											}}
 										>
@@ -553,7 +555,7 @@ export default function DonorDashboard(props) {
 												color: "white",
 												height: "3.4em",
 												background: "#1e4187",
-												marginTop: "2em",
+												marginTop: "2.5em",
 												borderRadius: "1em",
 											}}
 										>
@@ -571,13 +573,13 @@ export default function DonorDashboard(props) {
 								style={{
 									borderRadius: "1.5em",
 									maxHeight: matchesXS ? "10em" : "20em",
-									maxWidth: matchesXS ? "17em" : "25em",
+									width: matchesXS ? "17em" : "15em",
 									marginLeft: matchesXS
 										? "5em"
 										: matchesSM
 										? "12em"
 										: matchesMD
-										? "20em"
+										? "10em"
 										: "1em",
 									marginTop: matchesXS
 										? "2em"
@@ -598,7 +600,7 @@ export default function DonorDashboard(props) {
 											style={{
 												paddingTop: "2em",
 												color: "#3E3B6B",
-												fontSize: "1.1rem",
+												fontSize: "0.7rem",
 											}}
 											variant="h5"
 											gutterBottom
@@ -628,13 +630,13 @@ export default function DonorDashboard(props) {
 								style={{
 									borderRadius: "1.5em",
 									maxHeight: "15em",
-									maxWidth: matchesXS ? "18em" : "25em",
+									mwidth: matchesXS ? "18em" : "15em",
 									marginLeft: matchesXS
 										? "4.7em"
 										: matchesSM
 										? "12em"
 										: matchesMD
-										? "20em"
+										? "1em"
 										: "1em",
 									marginTop: matchesXS ? "2em" : "0.7em",
 
@@ -649,7 +651,7 @@ export default function DonorDashboard(props) {
 											style={{
 												paddingTop: "1em",
 												color: "#3E3B6B",
-												fontSize: "1rem",
+												fontSize: "0.7rem",
 											}}
 											variant="h6"
 											gutterBottom
@@ -663,7 +665,7 @@ export default function DonorDashboard(props) {
 											style={{ paddingTop: "2em" }}
 										>
 											<Grid item container md={6}>
-												<img src={upload} style={{ maxHeight: 45 }} />
+												<img src={upload} style={{ maxHeight: 25 }} />
 											</Grid>
 											<Grid
 												item
@@ -695,13 +697,13 @@ export default function DonorDashboard(props) {
 								style={{
 									borderRadius: "1.5em",
 									maxHeight: "15em",
-									maxWidth: matchesXS ? "19em" : "25em",
+									width: matchesXS ? "19em" : "15em",
 									marginLeft: matchesXS
 										? "3.99em"
 										: matchesSM
 										? "12em"
 										: matchesMD
-										? "20em"
+										? "0em"
 										: "1em",
 									marginTop: matchesXS ? "2em" : "1em",
 									bottom: 0,
@@ -710,7 +712,7 @@ export default function DonorDashboard(props) {
 								}}
 							>
 								<Grid>
-									<Grid align="center" style={{ padding: "1em" }}>
+									<Grid align="center" style={{ padding: "0.3em" }}>
 										<Typography
 											style={{
 												paddingTop: "1em",
