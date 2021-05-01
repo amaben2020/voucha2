@@ -401,7 +401,7 @@ export default function DonorDashboard(props) {
 										? "8em"
 										: undefined,
 									marginBottom: matchesXS ? "2.0em" : undefined,
-									minWidth: matchesXS ? "6em" : matchesSM ? "25em" : "45em",
+									minWidth: matchesXS ? "6em" : matchesSM ? "25em" : "35em",
 									minHeight: matchesXS
 										? "8em"
 										: matchesSM

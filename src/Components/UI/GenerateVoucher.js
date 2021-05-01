@@ -600,7 +600,7 @@ export default function DonorDashboard(props) {
 											style={{
 												paddingTop: "2em",
 												color: "#3E3B6B",
-												fontSize: "0.7rem",
+												fontSize: "0.9rem",
 											}}
 											variant="h5"
 											gutterBottom
@@ -651,7 +651,7 @@ export default function DonorDashboard(props) {
 											style={{
 												paddingTop: "1em",
 												color: "#3E3B6B",
-												fontSize: "0.7rem",
+												fontSize: "1.2rem",
 											}}
 											variant="h6"
 											gutterBottom
@@ -676,7 +676,8 @@ export default function DonorDashboard(props) {
 											>
 												<Button
 													component={Link}
-													to="/donorfundwallet"
+													// to="/donorfundwallet"
+													to="#"
 													variant="contained"
 													style={{
 														background: "#1e4187",
@@ -717,7 +718,7 @@ export default function DonorDashboard(props) {
 											style={{
 												paddingTop: "1em",
 												color: "#3E3B6B",
-												fontSize: "1rem",
+												fontSize: "1.1rem",
 											}}
 											variant="h6"
 											gutterBottom

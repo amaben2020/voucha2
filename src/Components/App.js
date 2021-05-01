@@ -6,7 +6,7 @@ import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import Footer from "./UI/Footer";
 import LandingPage from "./UI/LandingPage";
 
-// import Wallet from "./UI/Wallet";
+import Wallet from "./UI/Wallet";
 import About from "../Components/UI/About";
 import HowItWorks from "./UI/HowItWorks";
 import VendorSignUp from "../Components/UI/VendorSignUp";
@@ -124,7 +124,7 @@ function App() {
 							/>
 						)}
 					/>
-					{/* <Route
+					<Route
 						exact
 						path="/wallet"
 						render={(props) => (
@@ -134,7 +134,7 @@ function App() {
 								setSelectedIndex={setSelectedIndex}
 							/>
 						)}
-					/>{" "} */}
+					/>
 					{/* <Route
 						exact
 						path="/profile"
